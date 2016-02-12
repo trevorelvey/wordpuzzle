@@ -8,4 +8,10 @@ public class WordPuzzleTest {
       WordPuzzle wordPuzzle = new WordPuzzle();
       assertEquals("_nd", wordPuzzle.puzzleMaker("and"));
     }
+
+  @Test
+    public void WordPuzzle_replacesRestOfVowels (){
+      WordPuzzle wordPuzzle = new WordPuzzle();
+      assertEquals("__d__ _nd", wordPuzzle.puzzleMaker("audio end"));
+    }
 }

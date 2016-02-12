@@ -12,7 +12,7 @@ public class WordPuzzle {
     String puzzle = "";
     char[] splitInput = input.toCharArray();
     for (int i=0; i < splitInput.length; i++){
-      if (splitInput[i] == ('a')) {
+      if (splitInput[i] == ('a') || splitInput[i] == ('e') || splitInput[i] == ('i') || splitInput[i] == ('o') || splitInput[i] == ('u')) {
         puzzle += "_";
       } else {
         puzzle += splitInput[i];
