@@ -1,7 +1,7 @@
 import org.junit.*;
 import static org.junit.Assert.*;
 
-public class UnitTest {
+public class WordPuzzleTest {
 
   @Rule
   public DatabaseRule database = new DatabaseRule();
