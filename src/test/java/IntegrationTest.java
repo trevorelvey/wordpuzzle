@@ -16,8 +16,14 @@ public class IntegrationTest extends FluentTest {
   public static ServerRule server = new ServerRule();
 
   @Test
-    public void rootTest() {
+    public void homeTest() {
       goTo("http://localhost:4567");
       assertThat(pageSource()).contains("Puzzle Maker");
+    }
+
+  @Test
+    public void puzzleTest() {
+      goTo("http://localhost:4567/puzzle?input=word");
+      assertThat(pageSource()).contains("Puzzle");
     }
 }
